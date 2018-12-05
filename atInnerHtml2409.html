@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+var aux="";
+aux="<table border>";
+for(var i=0;i<3;i++){
+	var nombre=prompt("introduce tu nombre", "ej: pepe");
+	var edad= prompt("introduce tu edad", "ej: 19");
+	
+	aux+="<tr style=\"background-color:red\"><td>";
+	aux+=nombre;
+    aux+="</td><td>";
+	aux+=edad;
+    aux+="</td></tr>"
+    
+	
+}
+aux+="</table>";
+   
+    document.getElementById("demo").innerHTML = aux;
+</script>
+
+</body>
+</html>
